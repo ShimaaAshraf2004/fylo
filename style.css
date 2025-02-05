@@ -48,24 +48,24 @@ a {
 .header {
   padding-block: 60px;
 }
-.header .container {
+.header  {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.header .container ul {
+.header  ul {
   display: flex;
   gap: 65px;
 }
-.header .container ul a {
+.header  ul a {
   font-weight: 500;
   font-size: 20px;
   transition: color var(--transition-duration) var(--transition-timing-function)
 }
-.header .container ul a:hover {
+.header  ul a:hover {
   color: #7374b9;
 }
-.header .container .menu-toggel-button {
+.header .menu-toggel-button {
   display: none;
   font-size: 25px;
   color: var(--Very-Dark-Blue);
@@ -73,15 +73,13 @@ a {
   border: none;
   outline: none;
 }
-.hero {
-  padding-block: 160px;
-}
 .hero .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   gap: 50px;
+  padding-block: 160px;
 }
 .hero .container article {
   flex: 1 150px;
@@ -137,11 +135,13 @@ a {
 .bg-curve {
   width: 100%;
 }
-.team {
-  padding-block: 140px;
-  background-color: #f9f8fe;
-  position: relative;
+.bg-curve::after {
+  content: "";
+  position: absolute;
   top: -5px;
+}
+.team {
+  background-color: #f9f8fe;
 }
 .team .container {
   display: flex;
@@ -149,6 +149,7 @@ a {
   align-items: center;
   flex-wrap: wrap;
   gap: 50px;
+  padding-block: 140px;
 }
 .team .container article {
   flex: 1 150px;
@@ -232,7 +233,6 @@ a {
 }
 
 .contact-us {
-  padding-block: 60px;
   background-color: #575989;
 }
 .contact-us .container {
@@ -241,6 +241,7 @@ a {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 50px;
+  padding-block: 60px;
 }
 .contact-us .container article {
   flex-basis: 510px;
@@ -288,10 +289,12 @@ a {
   background-color: #318ae5;
 }
 .footer {
-  padding-block: 100px;
   background-color: var(--Very-Dark-Blue);
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
+}
+.footer .container {
+  padding-block: 100px;
 }
 .footer .logo {
   margin-bottom: 25px;
@@ -345,7 +348,7 @@ a {
 
 @media (width < 1250px) {
   .hero .container {
-    flex-direction: column-reverse;
+    flex-wrap: wrap-reverse;
   }
   .hero .container article {
     text-align: center;
@@ -380,7 +383,7 @@ a {
 }
 @media (width < 1105px) {
   .team .container {
-    flex-direction: column-reverse;
+    flex-wrap: wrap-reverse;
   }
   .team .container article :where(h2, .p-one, .p-two) {
     text-align: center;
