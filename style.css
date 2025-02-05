@@ -43,7 +43,7 @@ a {
 .container {
   max-width: calc(var(--container-max-width) + (var(--container-padding-inline) * 2));
   padding-inline: var(--container-padding-inline);
-  margin: auto;
+  margin-inline: auto;
 }
 .header {
   padding-block: 60px;
