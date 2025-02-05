@@ -134,11 +134,8 @@ a {
 }
 .bg-curve {
   width: 100%;
-}
-.bg-curve::after {
-  content: "";
-  position: absolute;
-  top: -5px;
+  position: relative;
+  bottom: -5px;
 }
 .team {
   background-color: #f9f8fe;
