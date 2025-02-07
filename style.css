@@ -355,10 +355,10 @@ a {
   }
 }
 @media (width < 715px) {
-  .header .container ul {
+  .header ul {
     display: none;
   }
-  .header .container .menu-toggel-button {
+  .header .menu-toggel-button {
     display: block;
   }
   .hero .container article h1 {
@@ -393,6 +393,7 @@ a {
   }
   .photo-team {
     max-width: 500px;
+    margin-inline: auto;
   }
 }
 @media (width < 517px) {
